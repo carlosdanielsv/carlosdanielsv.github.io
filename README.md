@@ -1,7 +1,5 @@
 # Portfólio Pessoal - Carlos Daniel
 
-Um portfólio pessoal moderno e responsivo, desenvolvido com HTML e CSS, para exibir meus projetos e habilidades na área de Tecnologia da Informação.
-
 ---
 
 ## 🚀 Tecnologias Utilizadas
