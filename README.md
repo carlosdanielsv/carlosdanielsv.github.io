@@ -1,7 +1,5 @@
 # Portfólio Pessoal - Carlos Daniel
 
----
-
 ## 🚀 Tecnologias Utilizadas
 
 * **HTML5:** Estrutura semântica e acessível do conteúdo.
