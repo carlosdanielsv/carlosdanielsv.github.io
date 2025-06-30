@@ -1,6 +1,6 @@
 # Portfólio Pessoal - Carlos Daniel
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **HTML5:** Estrutura semântica e acessível do conteúdo.
 * **CSS3:** Estilização e design responsivo, utilizando variáveis CSS para um tema consistente e organização modular.
@@ -9,7 +9,7 @@
 
 ---
 
-##Funcionalidades
+## Funcionalidades
 
 * **Design Responsivo:** Adapta-se perfeitamente a diferentes tamanhos de tela (desktop, tablet, mobile).
 * **Navegação Ativa:** A guia da página atual é destacada visualmente na barra de navegação, melhorando a usabilidade.
@@ -19,7 +19,7 @@
 
 ---
 
-##Acesse o Site Online
+## Acesse o Site Online
 
 Você pode visitar o portfólio diretamente aqui:
 
@@ -27,7 +27,7 @@ Você pode visitar o portfólio diretamente aqui:
 
 ---
 
-##Contato
+## Contato
 
 Sinta-se à vontade para entrar em contato:
 
