@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #0F3D59;
+    --cor1: #0E4459;
+    --cor3: #307B8C;
+    --cor4: #374034;
+    --cor5: #F2F2F2;
+    --cor6: #333; 
+    --cor7: #fff;
+    --cor8: #00ff08;
+    --cor9: #242424;
+
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-texto: 'Open Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: var(--fonte-texto);
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: var(--cor5);
+    color: var(--cor6);
+}
+
+/* principal */
+main {
+    padding: 20px;
+    margin-bottom: -50px;
+    background-color: var(--cor1);
+    color: var(--cor7);
+    flex-grow: 1;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 10px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    padding:40px;
+}
+
+aside a {
+    padding: 10px 15px;
+    font-size: 25px; 
+    text-decoration: none;
+}
+
+/*--------titulos e textos--------*/
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em; 
+    margin-top: 10px;
+    color: var(--cor7);
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor0);
+    font-size: 1.8em;
+    padding: 10px;
+    padding-top: 20px;
+    color: var(--cor7);
+}
+
+p {
+    font-size: 1.1em; 
+    margin-top: 5px;
+    color: var(--cor7);
+}
+
+
+/*--------barra de navegacao--------*/
+nav {
+    background-color: var(--cor0);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+nav a {
+    color: var(--cor7);
+    padding: 20px;
+    font-size: 25px;
+    display: block;  
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor6);
+}
+
+.guia-ativa {
+    background-color: var(--cor3);
+}
+
+
+/*--------rodape--------*/
+footer {           
+    text-align: center;
+    margin-top: 50px;
+    background-color: var(--cor0);
+    color: var(--cor7);
+    padding: 20px;
+}
+
+footer p {
+    font-size: 15px; 
+}
+
+footer strong {
+    color: var(--cor3);
+}
+
+
+/*--------formulario--------*/
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: var(--cor9);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: var(--cor7);
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 110px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: var(--cor5);
+    color: var(--cor9);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px var(--cor8);
+    transform: scale(1.05);
+}
+
+.formulario {
+    padding: 80px 4%;
+}
+
+
+/*--------class--------*/
+.link-portfolio {
+    display: block;
+    padding: 20px;
+}
+
+.fotoport {      /* Home */
+    border-radius: 80%;
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
+.artigo_principal {      /* paginas */
+    padding-top: 20px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: var(--cor6);
+}
+
+.artigo_principal p {
+    padding: 10px;
+    text-indent: 20px;
+}
+
+.foto-paginas {
+    max-width: 100%;
+    height: auto;
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.projeto-sm {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor5);
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+.projeto-sm:hover, .link-contato:hover {
+    background-color: var(--cor3);
+}
+
+.projeto-sm:active, .link-contato:active {
+    color: var(--cor8);
+}
+
+.link-contato {
+    color: var(--cor5);
+}
+
+.logo {
+    width: 60px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    main {
+        margin-left: 0; 
+        padding-top: 60px; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    article {
+        max-width: 90%; 
+        padding: 0 10px; 
+    }
+
+    nav {
+        position: relative; 
+        width: 100%;
+        height: auto;
+        flex-direction: row; 
+        justify-content: space-around;
+        padding: 10px 0;
+        background-color: var(--cor0);
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 18px; 
+        flex-basis: auto;
+        min-width: 0;
+    }
+
+    article {
+        max-width: 95%;
+        padding: 0 5px;
+    }
+
+
+    .fotoport {
+        width: 60%;
+        max-width: 200px; 
+    }
+
+    .foto-paginas {
+        max-width: 100%; 
+    }
+}
+
+    
